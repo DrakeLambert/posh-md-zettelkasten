@@ -13,6 +13,8 @@
 .NOTES
     The markdown link generation method, Format-MarkdownLink, may need to be adjusted to create links that will work on the target platform.
 .LINK
+    https://github.com/DrakeLambert/posh-md-zettelkasten
+.LINK
     https://en.wikipedia.org/wiki/Zettelkasten
 #>
 [CmdletBinding(PositionalBinding = $false)]

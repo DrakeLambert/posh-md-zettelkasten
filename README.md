@@ -18,35 +18,30 @@ This cmdlet supports Zettelkasten notetaking by providing a plain-text method to
 
 ### Parameters
 
-`-TagPattern <String[]>`
+#### `-TagPattern <String[]>`
 
-Regular expression for matching tags.
+Regular expression for matching tags.  
+Default: `#((?!\s|#).)+`
 
-Default value: `#((?!\s|#).)+`
+#### `-Path <String[]>`
 
-`-Path <String[]>`
+One or more paths leading to input files. Supports wildcards.  
+Default: `./*.md`
 
-One or more paths leading to input files. Supports wildcards.
+#### `-DestinationPath <String>`
 
-Default value: `./*.md`
+The path specifying the tag index file to be generated.  
+Default: `./Tags.md`
 
-`-DestinationPath <String>`
+#### `-Exclude <String[]>`
 
-The path specifying the tag index file to be generated.
+One or more paths that will be excluded from the input.  
+Default: `$DestinationPath`
 
-Default value: `./Tags.md`
+#### `-Force [<SwitchParameter>]`
 
-`-Exclude <String[]>`
-
-One or more paths that will be excluded from the input.
-
-Default value: `$DestinationPath`
-
-`-Force [<SwitchParameter>]`
-
-Force this cmdlet to overwrite existing files.
-
-Default value: `False`
+Force this cmdlet to overwrite existing files.  
+Default: `False`
 
 ### Inputs
 
@@ -54,9 +49,7 @@ None.
 
 ### Outputs
 
-[System.IO.FileInfo]
-
-The file that this cmdlet creates.
+`[System.IO.FileInfo]` The file that this cmdlet creates.
 
 ### Notes
 

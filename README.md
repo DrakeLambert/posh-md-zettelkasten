@@ -53,7 +53,7 @@ None.
 
 ### Notes
 
-The markdown link generation method, Format-MarkdownLink, may need to be adjusted to create links that will work on the target platform.
+The markdown link generation method, `Format-MarkdownLink`, may need to be adjusted to create links that will work on the target platform.
 
 ### Related Links
 
